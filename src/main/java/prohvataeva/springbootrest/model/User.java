@@ -1,7 +1,15 @@
 package prohvataeva.springbootrest.model;
 
+import javax.validation.constraints.*;
+
 public class User {
+    @NotBlank
+//    @Pattern(regexp = "[a-zA-Z]")
+    @Size(min=5, max=15)
+
     String name;
+    @Size(min=5, max=15)
+
     String password;
 
     public User() {

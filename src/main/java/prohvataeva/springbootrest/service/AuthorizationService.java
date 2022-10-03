@@ -5,6 +5,7 @@ import org.springframework.stereotype.Component;
 import prohvataeva.springbootrest.exception.InvalidCredentials;
 import prohvataeva.springbootrest.exception.UnauthorizedUser;
 import prohvataeva.springbootrest.model.Authorities;
+import prohvataeva.springbootrest.model.User;
 import prohvataeva.springbootrest.repository.UserRepository;
 
 import java.util.List;
@@ -13,11 +14,11 @@ public class AuthorizationService{
     @Autowired
     UserRepository userRepository;
 
-    public List<Authorities> getAuthorities(String user, String password) {
-        if (isEmpty(user) || isEmpty(password)) {
+    public List<Authorities> getAuthorities(User user) {
+        if (isEmpty(user.getName()) || isEmpty(user.getPassword())) {
             throw new InvalidCredentials();
         }
-        List<Authorities> userAuthorities = userRepository.getUserAuthorities(user, password);
+        List<Authorities> userAuthorities = userRepository.getUserAuthorities(user);
         if (isEmpty(userAuthorities)) {
             throw new UnauthorizedUser();
         }
