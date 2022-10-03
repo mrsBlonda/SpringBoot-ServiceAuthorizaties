@@ -15,15 +15,15 @@ public class SpringBootRestApplication {
         SpringApplication.run(SpringBootRestApplication.class, args);
     }
 
-    @Bean
-    public UserRepository userRepository () {
-        return new UserRepository();
-    }
-//нужно ли в параметр сервиса добавлять репозиторий?
-    @Bean
-    public AuthorizationService authorizationService () {
-        return new AuthorizationService();
-    }
+//    @Bean
+//    public UserRepository userRepository () {
+//        return new UserRepository();
+//    }
+////нужно ли в параметр сервиса добавлять репозиторий?
+//    @Bean
+//    public AuthorizationService authorizationService () {
+//        return new AuthorizationService();
+//    }
 
 
 
