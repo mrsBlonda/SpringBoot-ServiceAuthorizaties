@@ -3,7 +3,7 @@ package prohvataeva.springbootrest.model;
 import javax.validation.constraints.*;
 
 public class User {
-    @NotBlank
+    @NotBlank(message = "User name or password is empty")
 //    @Pattern(regexp = "[a-zA-Z]")
     @Size(min=5, max=15)
 
