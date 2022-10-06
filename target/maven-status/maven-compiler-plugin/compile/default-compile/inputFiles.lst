@@ -1,0 +1,9 @@
+C:\Users\Max\IdeaProjects\SpringBoot-ServiceAuthorizaties\src\main\java\prohvataeva\springbootrest\SpringBootRestApplication.java
+C:\Users\Max\IdeaProjects\SpringBoot-ServiceAuthorizaties\src\main\java\prohvataeva\springbootrest\model\User.java
+C:\Users\Max\IdeaProjects\SpringBoot-ServiceAuthorizaties\src\main\java\prohvataeva\springbootrest\exception\InvalidCredentials.java
+C:\Users\Max\IdeaProjects\SpringBoot-ServiceAuthorizaties\src\main\java\prohvataeva\springbootrest\advice\ExceptionHandlerAdvice.java
+C:\Users\Max\IdeaProjects\SpringBoot-ServiceAuthorizaties\src\main\java\prohvataeva\springbootrest\exception\UnauthorizedUser.java
+C:\Users\Max\IdeaProjects\SpringBoot-ServiceAuthorizaties\src\main\java\prohvataeva\springbootrest\controller\AuthorizationController.java
+C:\Users\Max\IdeaProjects\SpringBoot-ServiceAuthorizaties\src\main\java\prohvataeva\springbootrest\service\AuthorizationService.java
+C:\Users\Max\IdeaProjects\SpringBoot-ServiceAuthorizaties\src\main\java\prohvataeva\springbootrest\repository\UserRepository.java
+C:\Users\Max\IdeaProjects\SpringBoot-ServiceAuthorizaties\src\main\java\prohvataeva\springbootrest\model\Authorities.java

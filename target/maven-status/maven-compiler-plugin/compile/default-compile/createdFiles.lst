@@ -1,0 +1,9 @@
+prohvataeva\springbootrest\repository\UserRepository.class
+prohvataeva\springbootrest\controller\AuthorizationController.class
+prohvataeva\springbootrest\model\User.class
+prohvataeva\springbootrest\service\AuthorizationService.class
+prohvataeva\springbootrest\exception\InvalidCredentials.class
+prohvataeva\springbootrest\SpringBootRestApplication.class
+prohvataeva\springbootrest\advice\ExceptionHandlerAdvice.class
+prohvataeva\springbootrest\exception\UnauthorizedUser.class
+prohvataeva\springbootrest\model\Authorities.class

@@ -1,0 +1,8 @@
+version: '1'
+services:
+  myappservice:
+    image: 'myappopenjdk11'
+    ports:
+      - 8080:8080
+    build:
+      context: .
