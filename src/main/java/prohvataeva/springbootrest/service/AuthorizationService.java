@@ -15,7 +15,7 @@ public class AuthorizationService{
     UserRepository userRepository;
 
     public List<Authorities> getAuthorities(User user) {
-        if (isEmpty(user.getName()) || isEmpty(user.getPassword())) {
+        if (isEmpty(user.getUser()) || isEmpty(user.getPassword())) {
             throw new InvalidCredentials();
         }
         List<Authorities> userAuthorities = userRepository.getUserAuthorities(user);

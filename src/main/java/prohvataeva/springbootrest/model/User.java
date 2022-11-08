@@ -7,7 +7,7 @@ public class User {
 //    @Pattern(regexp = "[a-zA-Z]")
     @Size(min=5, max=15)
 
-    String name;
+    String user;
     @Size(min=5, max=15)
 
     String password;
@@ -15,17 +15,17 @@ public class User {
     public User() {
     }
 
-    public User(String name, String password) {
-        this.name = name;
+    public User(String user, String password) {
+        this.user = user;
         this.password = password;
     }
 
-    public String getName() {
-        return name;
+    public String getUser() {
+        return user;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUser(String user) {
+        this.user = user;
     }
 
     public String getPassword() {
@@ -39,7 +39,7 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-                "name='" + name + '\'' +
+                "user='" + user + '\'' +
                 ", password='" + password + '\'' +
                 '}';
     }

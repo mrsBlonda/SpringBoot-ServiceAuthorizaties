@@ -10,12 +10,12 @@ import java.util.List;
 public class UserRepository {
     public List<Authorities> getUserAuthorities(User user) {
         List<Authorities> authoritiesList = new ArrayList<>();
-        if (user.getName().equals("Anna") && (user.getPassword().equals("Anna"))) {
+        if (user.getUser().equals("Anna") && (user.getPassword().equals("Anna"))) {
             authoritiesList.add(Authorities.READ);
-        } else if (user.getName().equals("Maksim") && (user.getPassword().equals("Maksim"))) {
+        } else if (user.getUser().equals("Maksim") && (user.getPassword().equals("Maksim"))) {
             authoritiesList.add(Authorities.WRITE);
             authoritiesList.add(Authorities.DELETE);
-        } else if(user.getName().equals("Elena") && (user.getPassword().equals("Elena"))) {
+        } else if(user.getUser().equals("Elena") && (user.getPassword().equals("Elena"))) {
             authoritiesList.add(Authorities.WRITE);
             authoritiesList.add(Authorities.READ);
         }
