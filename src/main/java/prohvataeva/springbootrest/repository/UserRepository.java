@@ -1,12 +1,12 @@
 package prohvataeva.springbootrest.repository;
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 import prohvataeva.springbootrest.model.Authorities;
 import prohvataeva.springbootrest.model.User;
 
 import java.util.ArrayList;
 import java.util.List;
-@Component
+@Repository
 public class UserRepository {
     public List<Authorities> getUserAuthorities(User user) {
         List<Authorities> authoritiesList = new ArrayList<>();

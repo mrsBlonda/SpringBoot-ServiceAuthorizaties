@@ -4,13 +4,10 @@ import javax.validation.constraints.*;
 
 public class User {
     @NotBlank(message = "User name or password is empty")
-//    @Pattern(regexp = "[a-zA-Z]")
     @Size(min=5, max=15)
-
-    String user;
+    private String user;
     @Size(min=5, max=15)
-
-    String password;
+    private String password;
 
     public User() {
     }
