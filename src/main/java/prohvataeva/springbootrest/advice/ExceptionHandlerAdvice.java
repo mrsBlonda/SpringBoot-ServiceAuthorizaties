@@ -3,12 +3,12 @@ package prohvataeva.springbootrest.advice;
 import org.hibernate.validator.internal.engine.ConstraintViolationImpl;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.BindException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import prohvataeva.springbootrest.exception.InvalidCredentials;
 import prohvataeva.springbootrest.exception.UnauthorizedUser;
 
-import java.net.BindException;
 import java.util.stream.Collectors;
 
 @RestControllerAdvice
